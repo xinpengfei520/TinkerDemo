@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadPatch() {
-        String path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() + "/patch.apk";
+        String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/patch.apk";
         File file = new File(path);
         if (file.exists()) {
             // 加载补丁

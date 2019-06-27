@@ -44,11 +44,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
-            android.applicationVariants.all { variant ->
-                variant.outputs.all {
-                    outputFileName = getApkName()
-                }
-            }
+//            android.applicationVariants.all { variant ->
+//                variant.outputs.all {
+//                    outputFileName = getApkName()
+//                }
+//            }
         }
     }
 
@@ -113,13 +113,13 @@ ext {
     tinkerEnabled = true
     //for normal build
     //old apk file to build patch apk
-    tinkerOldApkPath = "${bakPath}/app-V1.0-2019-06-27.apk"
+    tinkerOldApkPath = "${bakPath}/app-release-2019-06-27-17-19-57.apk"
     //proguard mapping file to build patch apk
-    tinkerApplyMappingPath = "${bakPath}/app-V1.0-2019-06-27-mapping.txt"
+    tinkerApplyMappingPath = "${bakPath}/app-release-2019-06-27-17-19-57-mapping.txt"
     //resource R.txt to build patch apk, must input if there is resource changed
-    tinkerApplyResourcePath = "${bakPath}/app-V1.0-2019-06-27-R.txt"
+    tinkerApplyResourcePath = "${bakPath}/app-release-2019-06-27-17-19-57-R.txt"
     //only use for build all flavor, if not, just ignore this field
-    tinkerBuildFlavorDirectory = "${bakPath}/app-V1.0-2019-06-27"
+    tinkerBuildFlavorDirectory = "${bakPath}/app-2019-06-27-17-19-57"
 }
 
 def getOldApkPath() {

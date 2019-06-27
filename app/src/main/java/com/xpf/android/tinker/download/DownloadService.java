@@ -132,7 +132,7 @@ public class DownloadService extends Service {
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            String channelId = "com.xpf.android.andfixdemo";
+            String channelId = "com.xpf.android.tinker";
             String channelName = "My Background Service";
             NotificationChannel channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_NONE);
             channel.setLightColor(Color.BLUE);

@@ -45,7 +45,7 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
             long downloadedLength = 0;
             String downloadUrl = params[0];
             String fileName = downloadUrl.substring(downloadUrl.lastIndexOf("/"));
-            String directory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
+            String directory = Environment.getExternalStorageDirectory().getAbsolutePath();
             file = new File(directory + fileName);
             if (file.exists()) {
                 downloadedLength = file.length();
