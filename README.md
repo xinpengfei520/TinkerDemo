@@ -21,3 +21,7 @@ Tencent Tinker Demo Best Practice.
 [tinkerpatch](http://www.tinkerpatch.com/)
 
 [腾讯热修复Tinker的详解和使用](https://juejin.im/entry/59f7cdbaf265da431e160db1)
+
+Tinker 支持动态全部下发、灰度下发，详情参考下面的链接：
+
+[http://tinkerpatch.com/Docs/SDK](http://tinkerpatch.com/Docs/SDK)
